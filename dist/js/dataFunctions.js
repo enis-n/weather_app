@@ -60,7 +60,7 @@ export const getCoordsFromApi = async (entryText, units) => {
     units: units,
   };
   try {
-    const dataStream = await fetch("./.netlify/functions/get_coords", {
+    const dataStream = await fetch("./.netlify/functions/get_weather", {
       method: "POST",
       body: JSON.stringify(urlDataObj),
     });
